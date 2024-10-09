@@ -7,15 +7,14 @@ from office365.sharepoint.files.file import File
 import datetime
 
 
-dotenv_path = find_dotenv()
-load_dotenv(dotenv_path)
 
 
-USERNAME =  os.getenv("USERNAME") 
-PASSWORD = os.getenv("PASSWORD") 
-SHAREPOINT_SITE =  os.getenv("SHAREPOINT_SITE")
-SHAREPOINT_SITE_NAME = os.getenv("SHAREPOINT_SITE_NAME")
-SHAREPOINT_DOC = os.getenv("SHAREPOINT_DOC")
+USERNAME =  os.environ.get('USERNAME')
+PASSWORD = os.environ.get('PASSWORD') 
+SHAREPOINT_SITE =  os.environ.get('SHAREPOINT_SITE')
+SHAREPOINT_SITE_NAME = os.environ.get('SHAREPOINT_SITE_NAME')
+SHAREPOINT_DOC = os.environ.get('SHAREPOINT_DOC')
+
 
 
 class SharePoint:
