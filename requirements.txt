@@ -4,5 +4,5 @@ Office365-REST-Python-Client
 xlsxwriter
 datetime
 flask
-xlrd==1.2.0
+pip install xlrd==1.2.0
 dotenv
